@@ -6,10 +6,10 @@
 }
 
 body{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9t2rQr5J22MAcMihPL1lH4cIjR1yEs8Kaw&usqp=CAU");
+    background-image: url("https://http2.mlstatic.com/D_NQ_NP_630791-MLB40647149850_022020-O.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
     font-family: arial;
     font-weight: 600;
     padding: 20px 10px;
@@ -25,6 +25,7 @@ body{
     font-size: 1.8rem;
 }
 
+
 .cabecalho ul {
     height: 40px;
     background-color: black;
@@ -39,6 +40,12 @@ body{
     color: #fff;
     font-weight: 900; 
     /* font-weight: bold; */
+    transition: 0.7s all;
+}
+
+.cabecalho a:hover {
+    transition: 0.7s all;
+    color: skyblue;
 }
 
 .menu{
@@ -60,11 +67,25 @@ body{
     transition: 0.7s all;
 }
 
+#contato input:focus, #contato textarea:focus {
+    transition: 0.7s all;
+    background-color: skyblue;
+    color: white;
+}
+
+#contato input:hover, #contato textarea:hover {
+    transition: 0.7s all;
+    background-color: skyblue;
+    color: white;
+}
 .menu li:hover{
     transition: 0.7s all;
     background-color: whitesmoke;
     color: black;
-    
+}
+
+.container{
+    height: 100vh;
 }
 
 #contato {
@@ -97,24 +118,32 @@ body{
     width: 30%;
     padding: 5px;
     margin-top: 10px;
+    transition: 0.7s all;
+}
+
+#enviar:hover {
+    transition: 0.7s all;
+    background-color: black;
+    color: white;
 }
 
 #contato label, #contato textarea {
     display: block;
     color: #fff;
+    transition: 0.7s all;
 }
 
 #contato textarea {
     margin: 0px auto;
-    color: #fff;
-    
+    color: black;
+    transition: 0.7s all;
 }
 
 #contato input, #contato textarea {
     border-radius: 25px;
     border: none;
     padding: 5px;
-
+    transition: 0.7s all;
 }
 
 /* #contato input[type=submit]{
@@ -127,5 +156,56 @@ body{
     width: 70%;
     display: inline-block;
     margin: 6rem;
-    color: grey;
+    color: rgb(255, 255, 255);
 }
+
+@media (max-width: 798px) {
+    .cabecalho ul {
+        font-size: 1.8rem;
+        width: 100%;
+        margin: 0;
+        padding: 8px;
+        text-align: center;
+    }
+    .menu {
+        display: none;
+    }
+    .titulo-main {
+        display: block;
+        position: relative;
+        width: 100%;
+        font-size: 2rem;
+    }
+    .contato {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        font-size: 1.4rem;
+        padding: 0px;
+    }
+    .main {
+        margin: 0;
+        text-align: center;
+        font-size: 1.9rem;
+        width: 100%;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.rodape {
+    padding: 5px;
+    text-align: center;
+    background-color: skyblue;
+    width: 100vw;
+    margin-left: -56px;
+}
+
