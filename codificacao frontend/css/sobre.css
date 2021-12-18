@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(https://data.1freewallpapers.com/download/starry-sky-night-trees-landscape-1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ .sobre{
+    color: white;
+    max-width: 980px;
+    text-align: center;
+    margin: 5rem auto;
+} 
+
+.sobre h3{
+    font-size: 4rem;
+}
+
+.sobre p {
+    font-size: 2rem;
+}
+ .main{
+     width: 100%;
+     margin: 0;
+ }

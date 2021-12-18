@@ -25,6 +25,10 @@ body{
     font-size: 1.8rem;
 }
 
+.ativo {
+    color: black !important;
+    background-color: white;
+}
 
 .cabecalho ul {
     height: 40px;
@@ -153,7 +157,7 @@ body{
 .main {
     font-size: 3em ;
     color: black;
-    width: 70%;
+    width: 60%;
     display: inline-block;
     margin: 6rem;
     color: rgb(255, 255, 255);
